@@ -23,6 +23,8 @@ import { varFade, MotionContainer } from 'src/components/animate';
 
 import { HeroBackground } from './components/hero-background';
 
+import cvFile from '../../../public/assets/cv/cv.pdf';
+
 // ----------------------------------------------------------------------
 
 const smKey = 'sm';
@@ -138,13 +140,13 @@ export function HomeHero({ sx, ...other }) {
           color="inherit"
           size="large"
           variant="outlined"
-          href={CONFIG.cv.url}
+          href={cvFile}
           target="_blank"
           rel="noopener"
           startIcon={<Iconify width={24} icon="pepicons-pop:cv" />}
           sx={{ borderColor: 'text.primary' }}
         >
-          Téléchargez mon CV
+          Voir mon CV
         </Button>
       </MInview>
     </Box>
